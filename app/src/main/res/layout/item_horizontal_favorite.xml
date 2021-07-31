@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="5dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_centerInParent="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/hori"
+        android:scaleType="centerCrop"
+        android:id="@+id/image_item_favorite"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:text="1"
+        style="@style/PriceTextStyle"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/blue"
+        android:shadowColor="@color/black"
+        android:shadowRadius="1.6"
+        android:shadowDx="1.5"
+        android:shadowDy="1.5"
+        android:textStyle="bold"
+        android:id="@+id/image_item_text_favorite"/>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="600dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/popup_image_room"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hori" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/chnmro"
+        style="@style/TitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Chambre numéro "
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/popup_title_room"
+        style="@style/TitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/chnmro"
+        app:layout_constraintStart_toEndOf="@+id/chnmro"
+        app:layout_constraintTop_toTopOf="@+id/chnmro" />
+
+    <ImageView
+        android:id="@+id/close_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_close"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/carac_one_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Description"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        style="@style/TitleTextStyle"/>
+
+    <TextView
+        android:id="@+id/popup_one_desc_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description 1"
+        app:layout_constraintStart_toStartOf="@+id/carac_one_title"
+        app:layout_constraintTop_toBottomOf="@+id/carac_one_title"
+        android:layout_marginTop="5dp"
+        android:maxWidth="350dp"
+        style="@style/DefaultTextStyle"/>
+
+    <TextView
+        android:id="@+id/carac_two_title"
+        style="@style/TitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prix"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/popup_one_desc_room"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/popup_two_desc_room"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description 2"
+        app:layout_constraintStart_toStartOf="@+id/carac_one_title"
+        app:layout_constraintTop_toBottomOf="@+id/carac_two_title" />
+
+    <TextView
+        android:id="@+id/euros"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" €"
+        app:layout_constraintBottom_toBottomOf="@+id/popup_two_desc_room"
+        app:layout_constraintStart_toEndOf="@+id/popup_two_desc_room"
+        app:layout_constraintTop_toTopOf="@+id/popup_two_desc_room" />
+
+    <TextView
+        android:id="@+id/carac_tre_title"
+        style="@style/TitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capacité"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/popup_two_desc_room"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/popup_ter_desc_room"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description 3"
+        app:layout_constraintStart_toStartOf="@+id/carac_one_title"
+        app:layout_constraintTop_toBottomOf="@+id/carac_tre_title" />
+
+    <View
+        android:id="@+id/view_separation"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popup_ter_desc_room" />
+
+    <ImageView
+        android:id="@+id/fav_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_star"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/view_separation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popup_ter_desc_room" />
+
+    <ImageView
+        android:id="@+id/book_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_book"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view_separation"
+        app:layout_constraintTop_toBottomOf="@+id/popup_ter_desc_room" />
+
+    <TextView
+        android:id="@+id/add_fav_text"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Ajouter aux favoris"
+        app:layout_constraintEnd_toStartOf="@+id/view_separation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fav_button" />
+
+    <TextView
+        android:id="@+id/book_text"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Réserver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view_separation"
+        app:layout_constraintTop_toBottomOf="@+id/fav_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

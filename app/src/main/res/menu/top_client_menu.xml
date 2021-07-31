@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+    android:id="@+id/top_client_info"
+    android:title="@string/top_cl_info_item"/>
+    <item
+        android:id="@+id/top_client_res"
+        android:title="@string/top_cl_res_item"/>
+    <item
+        android:id="@+id/top_client_fav"
+        android:title="@string/top_cl_fav_item"/>
+</menu>

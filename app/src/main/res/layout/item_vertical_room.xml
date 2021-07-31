@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_item_room"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hori" />
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/view_separation_rooms"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/chambre_nmro"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chambre n° "
+        app:layout_constraintBottom_toTopOf="@+id/view_separation_rooms"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/room_title"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/room_desc"
+        app:layout_constraintStart_toEndOf="@+id/chambre_nmro"
+        app:layout_constraintTop_toTopOf="@+id/chambre_nmro" />
+
+    <TextView
+        android:id="@+id/room_desc"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:maxWidth="200dp"
+        android:maxHeight="50dp"
+        android:maxLength="200"
+        android:text="Description de la chambre"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/view_separation_rooms" />
+
+    <TextView
+        android:id="@+id/room_price"
+        style="@style/PriceTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="39"
+        app:layout_constraintBottom_toBottomOf="@+id/euro"
+        app:layout_constraintEnd_toStartOf="@+id/euro"
+        app:layout_constraintTop_toTopOf="@+id/euro" />
+
+    <TextView
+        android:id="@+id/euro"
+        style="@style/PriceTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" €"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/item_fav_star"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_star_empty"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/room_price"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="5dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

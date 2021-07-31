@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp">
+
+    <View
+        android:id="@+id/separation_spinner"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cl_info_title_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="iD"
+        app:layout_constraintEnd_toStartOf="@+id/separation_spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="20dp"
+        style="@style/SubtitleTextStyle"/>
+
+    <TextView
+        android:id="@+id/cl_info_value_id"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/separation_spinner"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="20dp"
+        android:maxLength="20"
+        />
+
+    <!--  -->
+
+    <TextView
+        android:id="@+id/cl_info_title_name"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Nom"
+        app:layout_constraintEnd_toStartOf="@+id/separation_spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_info_title_id" />
+
+    <TextView
+        android:id="@+id/cl_info_value_name"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/separation_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/cl_info_value_id"
+        android:maxLength="20" />
+
+    <!--  -->
+    <TextView
+        android:id="@+id/cl_info_title_email"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="eMail"
+        app:layout_constraintEnd_toStartOf="@+id/separation_spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_info_title_name" />
+
+    <TextView
+        android:id="@+id/cl_info_value_email"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/separation_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/cl_info_value_name"
+        android:maxLength="50"
+        android:maxWidth="250dp"
+        android:maxHeight="50dp"
+        />
+
+    <!--  -->
+    <TextView
+        android:id="@+id/cl_info_title_password"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Mot De Passe"
+        app:layout_constraintEnd_toStartOf="@+id/separation_spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_info_title_email" />
+
+    <TextView
+        android:id="@+id/cl_info_value_password"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/separation_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/cl_info_value_email"
+        android:maxLength="20" />
+
+    <!--  -->
+    <TextView
+        android:id="@+id/cl_info_title_age"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Pays"
+        app:layout_constraintEnd_toStartOf="@+id/separation_spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_info_title_password" />
+
+    <TextView
+        android:id="@+id/cl_info_value_age"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/separation_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/cl_info_value_password"
+        android:maxLength="20" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

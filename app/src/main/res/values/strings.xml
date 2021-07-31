@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Hotel ROULET</string>
+
+    <string name="bottom_home_item">Accueil</string>
+    <string name="bottom_rooms_item">Chambres</string>
+    <string name="bottom_client_item">Espace Client</string>
+    <string name="top_button_login_item">Login</string>
+    <string name="top_button_logout_item">Logout</string>
+
+    <string name="top_cl_info_item">Mes Informations</string>
+    <string name="top_cl_res_item">Mes Réservations</string>
+    <string name="top_cl_fav_item">Mes Favoris</string>
+
+    <string name="home_page_title">Accueil</string>
+
+    <string name="selected_item">Selected item:</string>
+
+    <string name="register_item">Créer un compte</string>
+
+    <string-array name="civ">
+        <item>Monsieur</item>
+        <item>Madame</item>
+    </string-array>
+
+    <string-array name="adult">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="child">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="expo">
+        <item>Peu Importe</item>
+        <item>Port</item>
+        <item>Rempart</item>
+    </string-array>
+    <string-array name="price">
+        <item>Peu Importe</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+    </string-array>
+
+</resources>
